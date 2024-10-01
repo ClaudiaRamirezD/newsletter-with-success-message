@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section class="container">
+  <section class="container subscribe-page">
     <picture>
       <source media="(min-width: 48em)"
               srcset="/assets/images/illustration-sign-up-desktop.svg">
@@ -38,21 +38,30 @@
     </article>
   </section>
 
-  <!-- Success message start
+  <div class="container-success">
+    <div class="success-message-card">
 
-  Thanks for subscribing!
+      <img src="/assets/images/icon-success.svg" alt="" class="img-success">
+     
+      <h3 class="success-title">
+        Thanks for subscribing!
+      </h3>
+      <p class="success-text">
+        A confirmation email has been sent to <b>ash@loremcompany.com </b>
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+      <button class="dismiss-button button">
+        Dismiss message
+      </button>
+    </div>
+  </div>
 
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
-  Success message end -->
   <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Claudia Dom</a>.
     </div>
   </footer>
+<script src="script.js"></script>
 </body>
 </html>
