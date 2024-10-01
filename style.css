@@ -293,7 +293,7 @@ footer {
     }
 
     .container-success {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     height: 100vh; /* Make it fill the full screen height */
