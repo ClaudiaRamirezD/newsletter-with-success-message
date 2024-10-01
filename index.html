@@ -27,11 +27,11 @@
         <li>Measuring to ensure updates are a success</li>
         <li>And much more!</li>
       </ul>
-      <form>
+      <form id="subscribeForm">  
         <div class="form-group with-error-field"> 
           <label for="email">Email address</label>
-          <input placeholder="email@company.com" type="email" id="email">
-          <span class="error">Email address required</span>
+          <input placeholder="email@company.com" type="email" id="emailInput">
+          <span class="error">Valid email required</span>
         </div>
         <button class="button">Subscribe to monthly newsletter</button>
       </form>
@@ -40,14 +40,12 @@
 
   <div class="container-success">
     <div class="success-message-card">
-
-      <img src="/assets/images/icon-success.svg" alt="" class="img-success">
-     
+      <img src="/assets/images/icon-success.svg" alt="" class="img-success"> 
       <h3 class="success-title">
         Thanks for subscribing!
       </h3>
       <p class="success-text">
-        A confirmation email has been sent to <b>ash@loremcompany.com </b>
+        A confirmation email has been sent to <b class="emailDisplay"></b>
         Please open it and click the button inside to confirm your subscription.
       </p>
       <button class="dismiss-button button">

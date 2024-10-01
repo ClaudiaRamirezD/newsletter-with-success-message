@@ -124,6 +124,7 @@ input{
     border: 1px solid hsl(5, 100%, 95%);
     grid-template-columns: 2fr;
     cursor: pointer;
+    
 }
 
 input::placeholder {
@@ -145,6 +146,7 @@ form {
 }
 
 .form-group{
+    position: relative;
     width: 100%;
     display: grid;
     gap: .5rem;
@@ -152,13 +154,6 @@ form {
     font-weight: var(--fw-bold);
 } 
 
-.form-group > .error {
-    grid-row: 1;
-    grid-column: 2;
-    text-align: end;
-    color: var(--clr-accent-2);
-    display: none;
-}
 
 .button {
     width: 100%;
@@ -204,11 +199,19 @@ grid-template-columns: 2.5rem auto;
     
 }
 
+.error {
+    display: none;
+    position: absolute;
+    color: var(--clr-accent-2);
+    right: 4px;
+    top: 6px;
+    font-size: .7rem;
+}
+
 
 .container-success {
     display: none;
     flex-direction: column;
-    height: 100vh;
 }
 
 .success-message-card {
@@ -296,14 +299,12 @@ footer {
     display: none;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Make it fill the full screen height */
     background-color: var(--clr-neutral-900)
     }
 
     .success-message-card{
         border-radius: 1rem;
         width: min(60%, 40rem);
-        max-height: 60vh;
         padding: 3rem
     }
 
